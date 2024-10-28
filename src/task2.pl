@@ -37,8 +37,3 @@ group_max_avg_student(Group, MaxAvg, Students) :-
     max_list(Avgs, MaxAvg),
     % Найти всех студентов с этим максимальным средним баллом
     findall(Student, member((Student, MaxAvg), StudentAvgs), Students).
-
-% Пример запроса:
-% ?- student_avg_and_pass('Петров', Avg, Passed).
-% ?- failed_students_count('Математический анализ', Count).
-% ?- group_max_avg_student(101, MaxAvg, Students).
